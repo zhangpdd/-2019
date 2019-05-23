@@ -1,0 +1,49 @@
+//
+//  zhihuDaily.pch
+//  zhihuDaily
+//
+//  Created by yang on 16/2/22.
+//  Copyright © 2016年 yang. All rights reserved.
+//
+
+#ifndef zhihuDaily_pch
+#define zhihuDaily_pch
+
+#define WEAKSELF    __weak __typeof(&*self) ws = self;
+
+#define SYColor(r, g, b, a) [UIColor colorWithRed:r/255. green:g/255. blue:b/255. alpha:a*1.0]
+
+#define randomColor       SYColor(arc4random()%255, arc4random()%255, arc4random()%255, 1.)
+
+#define kScreenWidth         [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight        [UIScreen mainScreen].bounds.size.height
+#define kScreenBounds         [UIScreen mainScreen].bounds
+
+
+#define OpenDrawer          @"leftdrawer_open"
+#define CloseDrawer         @"leftdrawer_close"
+#define ToggleDrawer        @"leftdrawer_toggle"
+#define NotiLogin           @"user_login"
+
+
+#define White_StatusBar    do {[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;} while (0)
+
+#define Black_StatusBar     do {[UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;} while (0)
+
+
+#define kGroundColor        SYColor(48, 127, 255, 1.0)
+
+#define kWhiteColor         [UIColor whiteColor]
+
+#define kUserDefaults       [NSUserDefaults standardUserDefaults]
+#define kNotificationCenter         [NSNotificationCenter defaultCenter]
+
+#define kAccount            [SYAccount sharedAccount]
+
+
+
+
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
+
+#endif /* zhihuDaily_pch */
